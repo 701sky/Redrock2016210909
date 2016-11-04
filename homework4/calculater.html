@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>计算器</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <script type="text/javascript" src="js/demo.js"></script>
+</head>
+<body>
+   <div class="main">
+       <!--标题-->
+       <p class="top">计算器</p>
+       <!--显示屏-->
+       <input type="text" id="fa" class="shuru" name="fa" value="" onfocus="jsq(this)">
+       <div class="bd">
+            <!--第1排-->
+            <input type="button" id="7" onclick="jsq(this.id)" value="7" class="buttons">
+            <input type="button" id="8" onclick="jsq(this.id)" value="8" class="buttons">
+            <input type="button" id="9" onclick="jsq(this.id)" value="9" class="buttons">
+            <input type="button" id="back" onclick="tuige()" value="back" class="buttons">
+            <input type="button" id="C" onclick="qingchu()" value="C" class="buttons" style="margin-right: 0px" >
+            <!--第2排-->
+            <input type="button" id="4" onclick="jsq(this.id)" value="4" class="buttons">
+            <input type="button" id="5" onclick="jsq(this.id)" value="5" class="buttons">
+            <input type="button" id="6" onclick="jsq(this.id)" value="6" class="buttons">
+            <input type="button" id="*" onclick="jsq(this.id)" value="*" class="buttons">
+            <input type="button" id="/" onclick="jsq(this.id)" value="/" class="buttons" style="margin-right: 0px">
+            <!--第3排-->
+            <input type="button" id="1" onclick="jsq(this.id)" value="1" class="buttons">
+            <input type="button" id="2" onclick="jsq(this.id)" value="2" class="buttons">
+            <input type="button" id="3" onclick="jsq(this.id)" value="3" class="buttons">
+            <input type="button" id="+" onclick="jsq(this.id)" value="+" class="buttons">
+            <input type="button" id="-" onclick="jsq(this.id)" value="-" class="buttons" style="margin-right: 0px" >
+            
+            <!--第4排-->
+            <input type="button" id="0" onclick="jsq(this.id)" value="0" class="buttons">
+            <input type="button" id="00" onclick="jsq(this.id)" value="00" class="buttons">
+            <input type="button" id="." onclick="jsq(this.id)" value="." class="buttons">
+            <input type="button" id="%" onclick="baifenzhi()" value="%" class="buttons">
+            <input type="button" id="dengyu" onclick="dengyu(this.id)" value="=" class="buttons"  style="margin-right: 0px">
+       </div>
+   </div>
+</body>
+</html>
