@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>交易系统</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            fieldset{text-align: center;font-family: KaiTi}
+            p{text-align: center;}
+            #foot{background-color: white;text-align: center;height: 30px;font-size: 20px}
+        </style>
+    </head>
+    <body background="img/py.jpg">
+        <h1 style="text-align:center"><font color=#ffffff>欢迎来到PY交易登录页面</font></h1>
+        <fieldset td style="background-color: white">
+        <form method="post" action="./login.php">
+        <legend></legend>
+        交易账号:<br/>
+        <input type="text" name="username" required oninvalid="setCustomValidity('你到底想不想交易？？？')" oninput="setCustomValidity('')" >
+        <br/>
+        交易暗号:<br/>
+        <input type="password" name="password" required oninvalid="setCustomValidity('暗号呢？Ah♂？')" oninput="setCustomValidity('')" maxlength="6" >
+        <br/><br/>
+        <input type="button" value="没有账号" onclick="location='./register.html'">
+        <input type="submit" value="请求交易">
+        </form>
+
+        </fieldset>
+        <p>
+        <img  src="img/b2.gif">
+        <img  src="img/billy.jpg">
+        <img  src="img/b1.gif">
+        </p>
+        <div id="foot">
+            <p>Copyright&copy;wwww.pytransactions.com</p>
+        </div>
+    </body>
+</html>
